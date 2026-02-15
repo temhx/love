@@ -3,59 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Только для тебя ❤️</title>
+<title>Для Дашеньки</title>
 
 <style>
+
+/* фон /
 body{
     margin:0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(180deg,#ff9a9e,#fad0c4,#ffe6ea);
-    color:white;
-    text-align:center;
-}
-
-.container{
-    padding:60px 20px;
-}
-
-h1{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-p{
-    font-size:20px;
-    max-width:700px;
-    margin:25px auto;
+    background:#0b1220;
+    color:#e2e8f0;
+    font-family:'Segoe UI', Arial, sans-serif;
     line-height:1.7;
 }
 
+/ контейнер /
+.wrapper{
+    max-width:900px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+/ заголовок /
+.title{
+    text-align:center;
+    margin-bottom:70px;
+}
+.title h1{
+    font-size:44px;
+    margin:0;
+}
+.title p{
+    opacity:0.7;
+}
+
+/ карточки /
+.card{
+    background:#172036;
+    border-radius:18px;
+    padding:28px;
+    margin:40px 0;
+    box-shadow:0 20px 40px rgba(0,0,0,0.45);
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.9s;
+}
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/ фото /
 .photo{
-    width:85%;
-    max-width:420px;
-    margin:30px auto;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.35);
+    width:100%;
+    border-radius:14px;
+    margin-top:18px;
 }
 
-/* сердечко /
-.heart{
-    font-size:60px;
-    animation:beat 1.2s infinite;
+/ текст /
+.text{
+    font-size:19px;
+}
+
+/ конверт /
+.envelope{
+    margin:100px auto;
+    text-align:center;
+    cursor:pointer;
+    font-size:64px;
+    transition:0.3s;
+}
+.envelope:hover{
+    transform:scale(1.2);
+}
+
+/ письмо /
+.secret{
+    display:none;
+    background:#172036;
+    padding:45px;
+    border-radius:18px;
+    text-align:center;
+    animation:fade 1.4s forwards;
+}
+
+.love{
+    font-size:30px;
     margin-top:20px;
+    color:#fda4af;
 }
 
-@keyframes beat{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.25);}
-    100%{transform:scale(1);}
+@keyframes fade{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
 }
 
-/ финал */
-.final{
-    background:#75151e;
-    padding:100px 20px;
-    margin-top:60px;
+/ -------- ЗВЁЗДЫ -------- */
+
+.stars, .shooting-stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+}
+
+.stars{
+background:
+radial-gradient(2px 2px at 20% 30%, white, transparent),
+radial-gradient(1.5px 1.5px at 70% 80%, white, transparent),
+radial-gradient(1.5px 1.5px at 40% 60%, white, transparent),
+radial-gradient(2px 2px at 85% 20%, white, transparent),
+radial-gradient(1.5px 1.5px at 10% 75%, white, transparent),
+radial-gradient(1.5px 1.5px at 50% 10%, white, transparent);
+opacity:0.8;
+}
+
+.shooting-stars span{
+position:absolute;
+width:2px;
+height:90px;
+background:linear-gradient(white,transparent);
+opacity:0;
+transform:rotate(45deg);
+animation:shoot 7s linear infinite;
+}
+
+.shooting-stars span:nth-child(1){top:10%;left:20%;animation-delay:0s;}
+.shooting-stars span:nth-child(2){top:30%;left:80%;animation-delay:2s;}
+.shooting-stars span:nth-child(3){top:70%;left:40%;animation-delay:4s;}
+.shooting-stars span:nth-child(4){top:50%;left:60%;animation-delay:6s;}
+.shooting-stars span:nth-child(5){top:15%;left:70%;animation-delay:8s;}
+
+@keyframes shoot{
+0%{transform:translate(0,0) rotate(45deg);opacity:0;}
+10%{opacity:1;}
+100%{transform:translate(-700px,700px) rotate(45deg);opacity:0;}
 }
 
 </style>
@@ -63,79 +147,91 @@ p{
 
 <body>
 
-<div class="container">
+<div class="stars"></div>
+<div class="shooting-stars">
+<span></span><span></span><span></span><span></span><span></span>
+</div>
 
-<div class="heart">❤️</div>
-<h1>Приветаа, это только для тебя родная</h1>
+<div class="wrapper">
 
-<p>
-Я долго думал, что можно тебе подарить.  
-И понял — вещи со временем забываются,  
-а вот эмоции остаются.
-</p>
+<div class="title">
+<h1>Дашенька</h1>
+<p>я просто хотел оставить тебе что-то тёплое</p>
+</div>
 
-<p>
-Поэтому я сделал маленькое место в интернете,  
-в котором просто собрал всё, что чувствую к тебе.
-</p>
-
+<div class="card">
+<div class="text">
+Иногда появляется человек, после которого обычные дни становятся светлее.  
+У меня это — ты.
+</div>
 <img src="photo1.jpg" class="photo">
+</div>
 
-<p>
-Я ловлю себя на том, что часто думаю о тебе.  
-О каких-то мелочах, разговорах, моментах.  
-И именно они делают меня счастливым.
-</p>
-
+<div class="card">
+<div class="text">
+Я часто ловлю себя на мысли, что хочу первым делом написать именно тебе,  
+рассказать любую мелочь, потому что с тобой всё кажется важным.
+</div>
 <img src="photo2.jpg" class="photo">
+</div>
 
-<p>
-Иногда ты сама не понимаешь,  
-насколько делаешь мои дни лучше  
-просто тем, что ты есть.
-</p>
-
+<div class="card">
+<div class="text">
+Рядом с тобой спокойно.  
+Без напряжения, без притворства.  
+Просто хорошо.
+</div>
 <img src="photo3.jpg" class="photo">
+</div>
 
-<p>
-С тобой спокойно.  
-С тобой уютно.  
-И рядом с тобой как-будто всё становится на свои места.
-</p>
-
+<div class="card">
+<div class="text">
+Иногда достаточно твоей улыбки,  
+чтобы день уже считался удачным.
+</div>
 <img src="photo4.jpg" class="photo">
+</div>
 
-<p>
-Спасибо тебе за тепло, поддержку и внимание.  
-Для меня это правда важно.
-Увидев эти валентинки у меня дрожали руки,
-Для меня это безумно много значит любимая.
-</p>
-
+<div class="card">
+<div class="text">
+Я не мастер красивых признаний.  
+Но знаю точно — мне очень повезло, что ты есть в моей жизни.
+</div>
 <img src="photo5.jpg" class="photo">
+</div>
 
+<div class="envelope" onclick="openLetter()">✉️</div>
+
+<div id="letter" class="secret">
 <p>
-Ты самая лучшая девочка на свете,
-я хочу быть вместе навсегда, рядом с тобой.
-Ты-моя семья.
+Я долго думал, как это сказать.
 </p>
-
-<div class="final">
-<h1>Я очень тебя люблю Дашенька ❤️</h1>
+<div class="love">Я люблю тебя, Дашенька ❤️</div>
 <p>
-Хотел что бы ты это прочувствовала)
+Спасибо тебе за тепло, улыбку и чувства, которые ты мне даришь.
 </p>
 </div>
 
 </div>
+
+<script>
+
+const cards=document.querySelectorAll('.card');
+window.addEventListener('scroll',()=>{
+cards.forEach(card=>{
+const top=card.getBoundingClientRect().top;
+if(top<window.innerHeight-80){
+card.classList.add('show');
+}
+});
+});
+
+function openLetter(){
+document.getElementById('letter').style.display='block';
+window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
+}
+
+</script>
 
 </body>
-</ht
-
-
-
-
-
-
-
-
+</htm
