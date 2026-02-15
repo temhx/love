@@ -1,32 +1,21 @@
-"}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Для тебя ❤️</title>
+<title>Только для тебя ❤️</title>
 
 <style>
-
 body{
     margin:0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(180deg,#ff9a9e,#fad0c4,#fad0c4,#ffdde1);
+    background: linear-gradient(180deg,#ff9a9e,#fad0c4,#ffe6ea);
     color:white;
     text-align:center;
 }
 
-/* плавное появление /
-.section{
-    padding:80px 20px;
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s;
-}
-
-.section.show{
-    opacity:1;
-    transform:translateY(0);
+.container{
+    padding:60px 20px;
 }
 
 h1{
@@ -36,24 +25,24 @@ h1{
 
 p{
     font-size:20px;
-    max-width:750px;
-    margin:20px auto;
+    max-width:700px;
+    margin:25px auto;
     line-height:1.7;
 }
 
-/ фото /
 .photo{
     width:85%;
     max-width:420px;
-    margin:25px auto;
+    margin:30px auto;
     border-radius:20px;
     box-shadow:0 15px 35px rgba(0,0,0,0.35);
 }
 
-/ сердце /
+/* сердечко /
 .heart{
     font-size:60px;
     animation:beat 1.2s infinite;
+    margin-top:20px;
 }
 
 @keyframes beat{
@@ -62,27 +51,11 @@ p{
     100%{transform:scale(1);}
 }
 
-/ кнопка /
-button{
-    background:white;
-    color:#ff4d6d;
-    border:none;
-    padding:15px 30px;
-    font-size:20px;
-    border-radius:30px;
-    cursor:pointer;
-    margin-top:25px;
-    transition:0.3s;
-}
-
-button:hover{
-    transform:scale(1.1);
-}
-
-/ финальный блок /
+/ финал */
 .final{
     background:#ff4d6d;
-    padding:120px 20px;
+    padding:100px 20px;
+    margin-top:60px;
 }
 
 </style>
@@ -90,100 +63,64 @@ button:hover{
 
 <body>
 
-<div class="section show">
+<div class="container">
+
 <div class="heart">❤️</div>
-<h1>Привет</h1>
-<p>
-Я сделал это не просто так.  
-Мне хотелось сказать тебе намного больше, чем помещается в обычные сообщения.
-Поэтому я решил сделать целый сайт… только для тебя.
-</p>
-</div>
+<h1>Приветаа, это для тебя</h1>
 
-<div class="section">
-<h1>Наше знакомство</h1>
 <p>
-Я до сих пор помню день, когда мы начали общаться.  
-Тогда я даже не понимал, насколько важным человеком ты станешь для меня.
+Я долго думал, что можно тебе подарить.  
+И понял — вещи со временем забываются,  
+а вот эмоции остаются.
 </p>
+
+<p>
+Поэтому я сделал маленькое место в интернете,  
+в котором просто собрал всё, что чувствую к тебе.
+</p>
+
 <img src="photo1.jpg" class="photo">
-<p>
-С этого момента всё начало постепенно меняться.  
-И незаметно ты стала частью каждого моего дня.
-</p>
-</div>
 
-<div class="section">
-<h1>Наши моменты</h1>
-<img src="photo2.jpg" class="photo">
 <p>
-Эти фотографии — не просто снимки.  
-Это воспоминания, к которым я хочу возвращаться снова и снова.
+Мне нравится, как ты смеёшься.  
+Нравится, как рассказываешь что-то увлечённо.  
+И даже твои случайные фразы потом крутятся у меня в голове весь день.
+</p>
+
+<img src="photo2.jpg" class="photo">
+
+<p>
+Иногда ты сама не понимаешь,  
+насколько делаешь мои дни лучше  
+просто тем, что ты есть.
 </p>
 
 <img src="photo3.jpg" class="photo">
-<p>
-С тобой обычные прогулки становятся приключением,  
-а обычные дни — лучшими днями.
-</p>
-</div>
 
-<div class="section">
-<h1>Что я чувствую</h1>
 <p>
-Рядом с тобой я спокойнее.  
-С тобой я счастливее.  
-С тобой я настоящий.
+С тобой спокойно.  
+С тобой уютно.  
+И рядом с тобой как-будто всё становится на свои места.
 </p>
 
 <img src="photo4.jpg" class="photo">
 
 <p>
-Спасибо тебе за заботу, тепло, поддержку и твою улыбку.  
-Она — одна из моих любимых вещей в этом мире.
+Спасибо тебе за тепло, поддержку и внимание.  
+Для меня это правда важно.
 </p>
-</div>
 
-<div class="section">
-<h1>И главное...</h1>
+<img src="photo5.jpg" class="photo">
+
+<div class="final">
+<h1>Я очень тебя люблю ❤️</h1>
 <p>
-Я хочу, чтобы ты знала:  
-ты для меня не просто девушка.  
-Ты человек, которого я выбираю каждый день.
-</p>
-
-<button onclick="showFinal()">Нажми сюда</button>
-</div>
-
-<div id="final" class="final" style="display:none;">
-<h1>Я люблю тебя ❤️</h1>
-<p>
-И буду рядом, несмотря ни на что.
+Просто хотел, чтобы ты это ещё раз почувствовала.
 </p>
 </div>
 
-<script>
-
-/ появление при прокрутке /
-const sections=document.querySelectorAll('.section');
-
-window.addEventListener('scroll',()=>{
-    sections.forEach(sec=>{
-        const top=sec.getBoundingClientRect().top;
-        if(top<window.innerHeight-100){
-            sec.classList.add('show');
-        }
-    });
-});
-
-/ кнопка сюрприза */
-function showFinal(){
-    document.getElementById('final').style.display='block';
-    window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
-}
-
-</script>
+</div>
 
 </body>
-</
+</ht
 
