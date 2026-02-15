@@ -3,210 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Для Дашеньки</title>
+<title>Для Дашеньки ❤️</title>
 
 <style>
-
 body{
     margin:0;
-    background:#0f172a;
-    color:#e2e8f0;
-    font-family:'Segoe UI', Arial, sans-serif;
-    line-height:1.8;
+    background:linear-gradient(180deg,#0f172a,#1e293b,#020617);
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    color:#f1f5f9;
+    line-height:1.7;
 }
 
-/* контейнер /
-.wrapper{
-    max-width:720px;
+.container{
+    max-width:520px;
     margin:auto;
-    padding:60px 18px;
-}
-
-/ заголовок /
-.title{
+    padding:35px 18px 80px;
     text-align:center;
-    margin-bottom:60px;
 }
 
-.title h1{
-    font-size:38px;
-    margin:0;
+h1{
+    font-size:32px;
+    margin-bottom:25px;
 }
 
-.title p{
-    opacity:0.75;
-    margin-top:10px;
-}
-
-/ блок письма /
-.card{
-    background:#1e293b;
-    border-radius:16px;
-    padding:24px;
-    margin:28px 0;
-    box-shadow:0 15px 30px rgba(0,0,0,0.45);
-    opacity:0;
-    transform:translateY(35px);
-    transition:0.8s;
-}
-
-.card.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-/ текст /
-.text{
+p{
     font-size:18px;
-    margin-bottom:14px;
+    margin:18px 0;
 }
 
-/ маленькие фото (адаптив) /
+/* ФОТО — ГЛАВНОЕ /
 .photo{
-    width:55%;
-    max-width:200px;
+    width:72%;
+    max-width:210px;
+    border-radius:14px;
+    margin:22px auto;
     display:block;
-    margin:18px auto 5px auto;
-    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
 }
 
-/ конверт /
-.envelope{
-    margin:80px auto;
-    text-align:center;
-    cursor:pointer;
-    font-size:60px;
-    transition:0.3s;
+/ КНОПКА */
+#surpriseBtn{
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.8s;
+    margin-top:50px;
+    padding:14px 28px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#fb7185,#f43f5e);
+    color:white;
 }
 
-.envelope:hover{
-    transform:scale(1.15);
+.show{
+    opacity:1 !important;
+    transform:translateY(0) !important;
 }
 
-/ секрет */
-.secret{
+#message{
     display:none;
-    background:#1e293b;
-    padding:40px 25px;
-    border-radius:16px;
-    text-align:center;
-    animation:fade 1.2s forwards;
-}
-
-.love{
-    font-size:28px;
-    margin-top:15px;
-    color:#fda4af;
+    margin-top:30px;
+    font-size:20px;
+    animation:fade 1s ease;
 }
 
 @keyframes fade{
-from{opacity:0; transform:translateY(25px);}
-to{opacity:1; transform:translateY(0);}
+from{opacity:0;transform:translateY(15px);}
+to{opacity:1;transform:translateY(0);}
 }
-
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
+<div class="container">
 
-<div class="title">
-<h1>Дашенька</h1>
-<p>я просто хотел оставить тебе маленькое письмо</p>
-</div>
+<h1>Дашенька ❤️</h1>
 
-<div class="card">
-<div class="text">
-Я не знал, как это правильно сделать, поэтому сделал так.  
-Просто маленькое место в интернете, в котором можно спокойно прочитать то,
+<p>
+Я просто хотел оставить тебе маленькое письмо.  
+Маленькое место в интернете, где ты спокойно прочитаешь то,
 что иногда сложно сказать вслух.
+</p>
 
-Иногда человек появляется в жизни неожиданно,
-а потом становится важнее, чем можно было представить.
-</div>
 <img src="photo1.jpg" class="photo">
-</div>
 
-<div class="card">
-<div class="text">
-Я начал замечать, что в течение дня постоянно хочу тебе что-нибудь написать.  
-Даже мелочи. Даже ерунду.
+<p>
+Я начал замечать, что в течение дня постоянно
+хочу тебе что-нибудь написать. Даже мелочь.  
+Даже ерунду.  
+И дело не в словах — просто приятно делиться всем именно с тобой.
+</p>
 
-И дело не в словах —  
-просто приятно делиться всем именно с тобой.
-</div>
-<img src="photo2.jpg"
-</div>
+<img src="photo2.jpg" class="photo">
 
-<div class="card">
-<div class="text">
-С тобой спокойно.  
-Не нужно казаться лучше, чем я есть.  
-Не нужно подбирать правильные фразы.
+<p>
+Ты как-то незаметно стала частью моего дня.
+Когда что-то происходит — первая мысль
+«надо рассказать Даше».
+</p>
 
-Можно просто быть собой — и этого достаточно.
-</div>
 <img src="photo3.jpg" class="photo">
-</div>
 
-<div class="card">
-<div class="text">
-Иногда ты можешь даже не замечать,
-как сильно влияешь на моё настроение.  
-Один разговор с тобой может изменить весь день.
+<p>
+Рядом с тобой спокойно.  
+Без напряга, без масок, без попыток казаться лучше.
+Просто собой.  
+И это, оказывается, очень редкое чувство.
+</p>
 
-И твоя улыбка — правда одна из моих любимых вещей.
-</div>
 <img src="photo4.jpg" class="photo">
-</div>
 
-<div class="card">
-<div class="text">
-Я не умею делать громкие признания и пафосные речи.  
-Но я точно знаю одну простую вещь:
-мне очень хорошо, когда ты рядом в моей жизни.
-</div>
+<p>
+Я не умею писать идеально красивые признания.
+Но знаю одно —  
+мне хорошо, когда ты есть.
+</p>
+
 <img src="photo5.jpg" class="photo">
-</div>
-
-<div class="envelope" onclick="openLetter()">✉️</div>
-
-<div id="letter" class="secret">
-<p>
-Я долго думал, как сказать это правильно.
-</p>
-
-<div class="love">Я люблю тебя, Дашенька ❤️</div>
 
 <p>
-Спасибо тебе за тепло, за внимание и за то чувство,
-которое появляется у меня каждый раз,
-когда я вижу сообщение от тебя.
+И, наверное, всё это я сделал только ради одной вещи —
+чтобы ты просто улыбнулась, когда открыла эту страницу.
 </p>
+
+<button id="surpriseBtn">нажми сюда</button>
+
+<div id="message">
+Ты мне правда очень нравишься ❤️
 </div>
 
 </div>
 
 <script>
+const btn = document.getElementById("surpriseBtn");
+const msg = document.getElementById("message");
 
-const cards=document.querySelectorAll('.card');
-
-window.addEventListener('scroll',()=>{
-cards.forEach(card=>{
-const top=card.getBoundingClientRect().top;
-if(top<window.innerHeight-80){
-card.classList.add('show');
-}
-});
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 500){
+        btn.classList.add("show");
+    }
 });
 
-function openLetter(){
-document.getElementById('letter').style.display='block';
-window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
-}
-
+btn.onclick = ()=>{
+    msg.style.display="block";
+};
 </script>
 
 </body>
-</htm
+</ht
