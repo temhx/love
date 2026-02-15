@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,15 +11,15 @@ body{
     margin:0;
     background:#0f172a;
     color:#e2e8f0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height:1.7;
+    font-family:'Segoe UI', Arial, sans-serif;
+    line-height:1.8;
 }
 
-/* центрирование /
+/* контейнер /
 .wrapper{
-    max-width:900px;
+    max-width:720px;
     margin:auto;
-    padding:60px 20px;
+    padding:60px 18px;
 }
 
 / заголовок /
@@ -30,24 +29,25 @@ body{
 }
 
 .title h1{
-    font-size:42px;
+    font-size:38px;
     margin:0;
 }
 
 .title p{
-    opacity:0.7;
+    opacity:0.75;
+    margin-top:10px;
 }
 
-/ карточки /
+/ блок письма /
 .card{
     background:#1e293b;
-    border-radius:18px;
-    padding:30px;
-    margin:40px 0;
-    box-shadow:0 20px 40px rgba(0,0,0,0.45);
+    border-radius:16px;
+    padding:24px;
+    margin:28px 0;
+    box-shadow:0 15px 30px rgba(0,0,0,0.45);
     opacity:0;
-    transform:translateY(40px);
-    transition:0.9s;
+    transform:translateY(35px);
+    transition:0.8s;
 }
 
 .card.show{
@@ -55,22 +55,24 @@ body{
     transform:translateY(0);
 }
 
-/ фото /
-.photo{
-    width:100%;
-    border-radius:14px;
-    margin-top:18px;
-}
-
 / текст /
 .text{
-    font-size:19px;
-    margin-top:15px;
+    font-size:18px;
+    margin-bottom:14px;
 }
 
-/ конверт кнопка /
+/ маленькие фото (адаптив) /
+.photo{
+    width:70%;
+    max-width:260px;
+    display:block;
+    margin:18px auto 5px auto;
+    border-radius:12px;
+}
+
+/ конверт /
 .envelope{
-    margin:90px auto;
+    margin:80px auto;
     text-align:center;
     cursor:pointer;
     font-size:60px;
@@ -81,25 +83,25 @@ body{
     transform:scale(1.15);
 }
 
-/ скрытое письмо */
+/ секрет */
 .secret{
     display:none;
     background:#1e293b;
-    padding:40px;
-    border-radius:18px;
+    padding:40px 25px;
+    border-radius:16px;
     text-align:center;
-    animation:fade 1.4s forwards;
-}
-
-@keyframes fade{
-from{opacity:0; transform:translateY(30px);}
-to{opacity:1; transform:translateY(0);}
+    animation:fade 1.2s forwards;
 }
 
 .love{
-    font-size:30px;
-    margin-top:20px;
+    font-size:28px;
+    margin-top:15px;
     color:#fda4af;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(25px);}
+to{opacity:1; transform:translateY(0);}
 }
 
 </style>
@@ -111,23 +113,28 @@ to{opacity:1; transform:translateY(0);}
 
 <div class="title">
 <h1>Дашенька</h1>
-<p>Я сделал это просто потому, что ты важна для меня</p>
+<p>я просто хотел оставить тебе маленькое письмо</p>
 </div>
 
 <div class="card">
 <div class="text">
-Иногда в жизни появляется человек,  
-после которого обычные дни становятся теплее.  
-Вот у меня так произошло с тобой.
+Я не знал, как это правильно сделать, поэтому сделал так.  
+Просто маленькое место в интернете, в котором можно спокойно прочитать то,
+что иногда сложно сказать вслух.
+
+Иногда человек появляется в жизни неожиданно,
+а потом становится важнее, чем можно было представить.
 </div>
 <img src="photo1.jpg" class="photo">
 </div>
 
 <div class="card">
 <div class="text">
-Я начал замечать, что хочу рассказывать тебе всё подряд —  
-даже самые мелкие вещи,  
-потому что они становятся значимыми, если делить их с тобой.
+Я начал замечать, что в течение дня постоянно хочу тебе что-нибудь написать.  
+Даже мелочи. Даже ерунду.
+
+И дело не в словах —  
+просто приятно делиться всем именно с тобой.
 </div>
 <img src="photo2.jpg" class="photo">
 </div>
@@ -135,25 +142,30 @@ to{opacity:1; transform:translateY(0);}
 <div class="card">
 <div class="text">
 С тобой спокойно.  
-Без напряжения, без притворства.  
-Просто хорошо.
+Не нужно казаться лучше, чем я есть.  
+Не нужно подбирать правильные фразы.
+
+Можно просто быть собой — и этого достаточно.
 </div>
 <img src="photo3.jpg" class="photo">
 </div>
 
 <div class="card">
 <div class="text">
-Иногда достаточно одной твоей улыбки,  
-чтобы день уже считался удачным.
+Иногда ты можешь даже не замечать,
+как сильно влияешь на моё настроение.  
+Один разговор с тобой может изменить весь день.
+
+И твоя улыбка — правда одна из моих любимых вещей.
 </div>
 <img src="photo4.jpg" class="photo">
 </div>
 
 <div class="card">
 <div class="text">
-Я не знаю, как правильно подбирать красивые слова.  
-Поэтому скажу честно:
-мне очень повезло, что ты есть в моей жизни.
+Я не умею делать громкие признания и пафосные речи.  
+Но я точно знаю одну простую вещь:
+мне очень хорошо, когда ты рядом в моей жизни.
 </div>
 <img src="photo5.jpg" class="photo">
 </div>
@@ -162,17 +174,15 @@ to{opacity:1; transform:translateY(0);}
 
 <div id="letter" class="secret">
 <p>
-Я долго думал, как это сказать.  
-И понял, что проще всего — прямо.
+Я долго думал, как сказать это правильно.
 </p>
 
-<div class="love">
-Я люблю тебя, Дашенька ❤️
-</div>
+<div class="love">Я люблю тебя, Дашенька ❤️</div>
 
 <p>
-Спасибо тебе за тепло, за настроение  
-и за то, что рядом с тобой мне просто хорошо.
+Спасибо тебе за тепло, за внимание и за то чувство,
+которое появляется у меня каждый раз,
+когда я вижу сообщение от тебя.
 </p>
 </div>
 
@@ -199,4 +209,4 @@ window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
 </script>
 
 </body>
-</ht
+</htm
